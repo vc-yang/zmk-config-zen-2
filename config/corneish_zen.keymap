@@ -12,9 +12,9 @@
 / {
         keymap {
                 compatible = "zmk,keymap";
-
+                
                 default_layer {
-                        label = "QWERTY";
+                        label = "base";
                         bindings = <
    &kp Q &kp W &kp F &kp P &kp B   &kp J &kp L  &kp U     &kp Y   &kp BSPC  
    &kp A &kp R &kp S &kp T &kp G   &kp M &kp N  &kp E     &kp I   &kp O     
@@ -23,7 +23,16 @@
                         >;
                 };
                 
-                
+              lower_layer {
+                        label = "left";
+                        bindings = <
+   &HASH    &FSLH     &LEFT_BRACKET      &RIGHT_BRACKET       &STAR          &N1   &N2   &N3 &PLUS   &kp BSPC 
+   &DOLLAR  &BSLH     &LEFT_PARENTHESIS  &RIGHT_PARENTHESIS   &MINUS         &N3   &N4   &N5 &EQUAL  &DOT 
+   &PERCENT &CARET    &LEFT_BRACE        &RIGHT_BRACE         &UNDERSCORE    &N7   &N8   &N9 &N0     &RET 
+                          	        &trans     &trans       &trans           &trans  &trans   &trans
+                        >;
+                };
+     
 
         };
 };
