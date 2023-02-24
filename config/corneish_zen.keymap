@@ -23,7 +23,7 @@
                         >;
                 };
                 
-              lower_layer {
+              raise_layer {
                         label = "left";
                         bindings = <
    &kp HASH    &kp FSLH     &kp LEFT_BRACKET      &kp RIGHT_BRACKET       &kp STAR          &kp N1   &kp N2   &kp N3 &kp PLUS   &kp BSPC 
@@ -32,7 +32,16 @@
                           	        &kp LGUI     &kp LSHFT       &mo 1           &mo 2  &kp SPACE   &kp RALT
                         >;
                 };
-     
+                
+             lower_layer {
+                        label = "right";
+                        bindings = <
+   &kp ESC  &kp AT     &kp QMARK  &kp DOUBLE_QUOTES  &kp GRAVE         &kp LGUI(kp MINUS)  &kp F7        &kp UP       &kp PLUS      &kp C_MUTE 
+   &kp TAB  &kp AMPS   &kp EXCL   &kp SINGLE_QUOTE   &kp TILDE         &kp LGUI(kp PLUS)   &kp LEFT      &kp DOWN     &kp RIGHT     &trans 
+   &trans   &kp PIPE   &kp COLON  &kp SEMICOLON      &trans            &kp F9              &kp F10       &kp C_VOL_DN &kp C_VOL_UP  &kp F7 
+                          	        &kp LCTRL     &kp LSHFT       &mo 1           &mo 2  &kp SPACE   &kp RALT
+                        >;
+                };
 
         };
 };
