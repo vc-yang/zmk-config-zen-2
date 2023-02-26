@@ -57,8 +57,8 @@
                         label = "adjust";
                         bindings = <
    &bt BT_CLR  &kp AT     &kp QMARK  &kp DOUBLE_QUOTES  &kp GRAVE                 &kp F3      &kp F3    &kp F3     &kp F3      &kp F3 
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4               &kp F3      &kp K_PREV &kp K_PLAY_PAUSE     &kp K_NEXT     &kp F3 
-   &kp F3   &kp F3   &kp F3  &kp F3      &kp F3                       &kp F3      &kp K_MUTE        &kp K_VOLUME_DOWN       &kp K_VOLUME_UP        &kp F7 
+   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4               &kp F3      &kp F3 &kp F3     &kp F3     &kp F3 
+   &kp F3   &kp F3   &kp F3  &kp F3      &kp F3                       &kp F3      &kp K_MUTE        &kp K_VOLUME_DOWN       &kp K_VOLUME_UP        &kp F3 
                           	        &kp LCTRL     &kp LSHFT       &mo 1           &mo 2  &kp SPACE   &kp RALT
                         >;
                 };
