@@ -46,9 +46,9 @@
              lower_layer {
                         label = "right";
                         bindings = <
-   &kp ESC  &kp AT     &kp QMARK  &kp DOUBLE_QUOTES  &kp GRAVE   &kp LG(MINUS)           &kp F3        &kp UP       &kp K_MUTE      &kp F3 
+   &kp ESC  &kp AT     &kp QMARK  &kp DOUBLE_QUOTES  &kp GRAVE   &kp LG(MINUS)           &kp PG_UP        &kp UP       &kp PG_DN      &kp F3 
    &kp TAB  &kp AMPS   &kp EXCL   &kp SINGLE_QUOTE   &kp TILDE   &kp LG(EQUAL)           &kp LEFT      &kp DOWN     &kp RIGHT     &kp F3 
-   &kp F3   &kp PIPE   &kp COLON  &kp SEMICOLON      &kp F3      &kp F9           &kp F10       &kp K_VOLUME_DOWN       &kp K_VOLUME_UP        &kp F7 
+   &kp F3   &kp PIPE   &kp COLON  &kp SEMICOLON      &kp F3      &kp F9           &kp K_MUTE       &kp K_VOLUME_DOWN       &kp K_VOLUME_UP        &kp F7 
                           	        &kp LCTRL     &kp LSHFT       &mo 1           &mo 2  &kp SPACE   &kp RALT
                         >;
                 };
