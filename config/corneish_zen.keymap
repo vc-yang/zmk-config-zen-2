@@ -46,7 +46,7 @@
             #binding-cells = <0>;
          
             bindings = <&kp C &kp H &kp U &kp Q &kp I &kp A &kp O &kp DOT
-                        kp Y
+                        &kp Y
                        &kp AT 
                        &kp G &kp M &kp A &kp I &kp L 
                        &kp DOT 
