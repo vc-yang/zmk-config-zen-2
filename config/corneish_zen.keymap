@@ -10,6 +10,83 @@
 };
 
 / {
+
+// Define email macros
+    macros {
+        email1: email1 {
+            compatible = "zmk,behavior-macro";
+            label = "EMAIL_ONE";
+            #binding-cells = <0>;
+            // Replace with your actual email - example: yourname@gmail.com
+            bindings = <&kp V &kp I &kp C &kp K &kp Y &kp DOT 
+                        &kp C &kp H &kp U &kp Q &kp I &kp A &kp O &kp DOT 
+                        &kp Y &kp A &kp N &kp G
+                       &kp AT 
+                       &kp G &kp M &kp A &kp I &kp L 
+                       &kp DOT 
+                       &kp C &kp O &kp M>;
+        };
+        
+        email2: email2 {
+            compatible = "zmk,behavior-macro";
+            label = "EMAIL_TWO";
+            #binding-cells = <0>;
+            // Replace with your second email - example: work@company.com
+            bindings = <&kp V &kp I &kp C &kp K &kp Y &kp DOT 
+                        &kp S &kp E &kp R &kp E &kp N &kp D &kp I &kp P &kp I &kp T &kp Y
+                       &kp AT 
+                       &kp G &kp M &kp A &kp I &kp L 
+                       &kp DOT 
+                       &kp C &kp O &kp M>;
+        };
+        
+        email3: email3 {
+            compatible = "zmk,behavior-macro";
+            label = "EMAIL_THREE";
+            #binding-cells = <0>;
+         
+            bindings = <&kp C &kp H &kp U &kp Q &kp I &kp A &kp O &kp DOT
+                        kp Y
+                       &kp AT 
+                       &kp G &kp M &kp A &kp I &kp L 
+                       &kp DOT 
+                       &kp C &kp O &kp M>;
+        };
+    
+        
+        
+    };
+    
+    // Define combos for EMW and EMF
+    combos {
+        compatible = "zmk,combos";
+        
+        // Combo: E + M + W = Email 1
+        combo_email1 {
+            timeout-ms = <50>;
+            key-positions = <17 15 1>;  // E, M, W positions
+            bindings = <&email1>;
+            layers = <0>;  // Only works on default layer
+        };
+        
+        // Combo: E + M + F = Email 2
+        combo_email2 {
+            timeout-ms = <50>;
+            key-positions = <17 15 2>;  // E, M, F positions
+            bindings = <&email2>;
+            layers = <0>;  // Only works on default layer
+        };
+        
+         // Combo: E + M + P = Email 3
+        combo_email3 {
+            timeout-ms = <50>;
+            key-positions = <17 15 3>;  
+            bindings = <&email3>;
+            layers = <0>;  // Only works on default layer
+        };
+    };
+
+
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
